@@ -1,0 +1,169 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: DroidSans;
+}
+
+.BlackJack { 
+	font-family: BlackJack;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSans';
+    src: url('fonts/DroidSans.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DroidSans-Bold';
+    src: url('fonts/DroidSans-Bold.ttf') format('truetype');
+}
+.main-main-header {
+    background: #2d363e; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #2d363e 0, #11161c 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #2d363e 0,#11161c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #2d363e 0,#11161c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#main-header {
+    font-family: BlackJack;
+    text-shadow: 0 2px 1px black;
+    height: 100px;
+    padding-top: 40px
+
+}
+    #main-header a {
+        color: #d6d6d6;
+        text-decoration: none;
+    }
+
+
+.navbar-default-header {
+    background-image: -webkit-linear-gradient(#3e4852, #353e48 60%, #323b44);
+    background-image: -o-linear-gradient(#3e4852, #353e48 60%, #323b44);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3e4852), color-stop(60%, #353e48), to(#323b44));
+    background-image: linear-gradient(#3e4852, #353e48 60%, #323b44);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 10px;
+}
+
+.navbar-default-footer {
+    background: none;
+    border: none;
+    margin-bottom: 0;
+}
+.navbar-default-footer div ul li a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a  {
+    color: white;
+    text-shadow: 0 2px 1px black;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #8d96a0;
+    text-shadow: 0 2px 1px black;
+}
+
+.twitter .rss .facebook {
+    background-image: url('../img/logos.png');
+    background-repeat: no-repeat;
+}
+
+.contauner-form {
+    width: 80%;
+}
+
+.colaborate-font {
+    font-family: Colaborate;
+    font-weight: lighter;
+}
+
+.book-container {
+    margin-left: 20px;
+}
+
+.img-thumbnail {
+    max-height: 200px;
+    margin-left: 0;
+    border-radius: 0;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.btn-custom {
+    background-image: -webkit-linear-gradient(#3e4852, #353e48 60%, #323b44);
+    background-image: -o-linear-gradient(#3e4852, #353e48 60%, #323b44);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3e4852), color-stop(60%, #353e48), to(#323b44));
+    background-image: linear-gradient(#3e4852, #353e48 60%, #323b44);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 15px;
+}
+
+.btn-custom:hover {
+    color: #8d96a0;
+    text-shadow: 0 2px 1px black;
+}
+
+.main-footer {
+    margin-top: 50px;
+    background: #2d363e; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #2d363e 0, #11161c 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #2d363e 0,#11161c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #2d363e 0,#11161c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: #8b949d;
+    
+}
+
+.right-widget {
+    padding: 20px;
+
+}
+.right-widget div {
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 70%, #f7f7f7);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 70%, #f7f7f7);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(70%, #ffffff), to(#f7f7f7));
+    background-image: linear-gradient(#ffffff, #ffffff 70%, #f7f7f7);
+
+}
+
+
+.right-widget > div {
+    border: 1px solid #c5c5c5;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.right-widget > div >p {
+    color: #5e5e5e;
+}
+
+.left-footer-widget {
+    padding-right: 60px;
+}
+
+.center-footer-widget {
+    padding: 0 30px;
+}
+
+.right-footer-widget {
+    padding-left: 60px;
+}
+
+.book-details {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.container-width {
+    width: 90%;
+    margin: auto;
+}

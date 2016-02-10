@@ -1,0 +1,16 @@
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\BookStore.Data.dll.config
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\BookStore.Data.dll
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\BookStore.Data.pdb
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\BookStore.Models.dll
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\EntityFramework.dll
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\BookStore.Models.pdb
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\EntityFramework.xml
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\obj\Debug\BookStore.Data.csprojResolveAssemblyReference.cache
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\obj\Debug\BookStore.Data.dll
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Data\obj\Debug\BookStore.Data.pdb

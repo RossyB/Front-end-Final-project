@@ -1,0 +1,26 @@
+﻿<div class="container book-details">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{vm.book.BookImageUrl}}" alt="{{vm.book.Title}}" class="img-responsive"/>
+        </div>
+        <div class="col-md-7">
+            <h1 class="colaborate-font">{{vm.book.Title}}</h1>
+            <div><strong>Author: </strong>{{vm.book.Author}}
+            </div>
+            <div><strong>Category: </strong>{{vm.book.Category}}
+            </div>
+            <div><strong>Added: </strong>{{vm.book.AddedOn}}
+            </div>
+            <div><strong>Owner: </strong>{{vm.book.Owner}}
+            </div>
+            <div><strong>Description: </strong>
+            </div>
+            <p>{{vm.book.Description}}</p>
+            <div><strong>Price: </strong>{{vm.book.Price}}
+            </div>
+        </div>
+    </div>
+    <div class="pull-right">
+        <a href="/" class="btn btn-sm btn-custom">Go Back</a>
+    </div>
+</div>

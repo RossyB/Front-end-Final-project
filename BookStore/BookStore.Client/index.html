@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Store</title>
+    <meta charset="utf-8"/>
+    <base href="/" />
+    <link href="libs/Content/bootstrap.css" rel="stylesheet"/>
+    <link href="libs/Content/toastr.css" rel="stylesheet" />
+    <link href="css/MyFontsWebfontsKit/MyFontsWebfontsKit.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet"/>
+
+</head>
+<body ng-app="bookStoreApp" ng-cloak ng-controller="MainController as vm">
+<div class="main-main-header">
+    <header class="container">
+        <h1 id="main-header">
+            <a href="/">My Book Store</a>
+        </h1>
+        <nav class="navbar navbar-default navbar-default-header">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href="/home" class="main-nav">Home</a></li>
+                    <li><a href="/books" class="main-nav">Books</a></li>
+                    <li><a href="#" class="main-nav">Features</a></li>
+                    <li><a href="#" class="main-nav">About</a></li>
+                    <li><a href="#" class="main-nav">Blog</a></li>
+                    <li><a href="#" class="main-nav">Support</a></li>
+                </ul>
+                <ul class="nav navbar-nav" ng-if="!vm.globalySetCurrentUser">
+                    <li><a href="/identity/register" class="main-nav">Register</a></li>
+                    <li><a href="/identity/login" class="main-nav">Login</a></li>
+                </ul>
+                <ul class="nav navbar-nav" ng-if="vm.globalySetCurrentUser">
+                    <li><a href="#" ng-click="vm.logout()" class="main-nav">Logout</a></li>
+                </ul>
+                <ul class="nav navbar-nav" ng-if="vm.globalySetCurrentUser">
+                    <li><a href="/identity/profile" class="main-nav">{{vm.globalySetCurrentUser.Email}}</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="twitter"></a></li>
+                    <li><a href="#" class="rss"></a></li>
+                    <li><a href="#" class="facebook"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<div class="container" ng-view></div>
+
+    <div class="main-footer">
+        <footer class="container">
+            <div class="row">
+                <div class="col-md-4 left-footer-widget">
+                    <h3 class="colaborate-font">
+                        <a href="#">Who We Are</a>
+                    </h3>
+                    <p>Rhoncus quis, varius sed velit. Mauris quis nunc eu nunc molestie egestas et sit amet odio. Morbi lacinia velit in nibh sodales sed pharetra sem feugiat. Vivamus ut cursus augue. Integer sit amet arcu lorem, at egestas tellus. Phasellus tellus orci, congue at tristique at, mattis ut arcu. Donec dictum </p>
+                </div>
+                <div class="col-md-4  center-footer-widget">
+                    <h3 class="colaborate-font">
+                        <a href="#">Custom Text Widget</a>
+                    </h3>
+                    <p>Rhoncus quis, varius sed velit. Mauris quis nunc eu nunc molestie egestas et sit amet odio. Morbi lacinia velit in nibh sodales sed pharetra sem feugiat. Vivamus ut cursus augue. Integer sit amet arcu lorem, at egestas tellus. Phasellus tellus orci, congue at tristique at, mattis ut arcu. Donec dictum </p>
+                </div>
+                <div class="col-md-4 right-footer-widget">
+                    <h3 class="colaborate-font">
+                        <a href="#">Recent Posts</a>
+                    </h3>
+                    <p>Rhoncus quis, varius sed velit. Mauris quis nunc eu nunc molestie egestas et sit amet odio. Morbi lacinia velit in nibh sodales sed pharetra sem feugiat. Vivamus ut cursus augue. Integer sit amet arcu lorem, at egestas tellus. Phasellus tellus orci, congue at tristique at, mattis ut arcu. Donec dictum </p>
+                </div>
+            </div>
+            
+        </footer>
+        <footer>
+            <nav class="navbar navbar-default navbar-default-footer">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/home" class="main-nav">Home</a></li>
+                        <li><a href="/books" class="main-nav">Books</a></li>
+                        <li><a href="#" class="main-nav">Features</a></li>
+                        <li><a href="#" class="main-nav">About</a></li>
+                        <li><a href="#" class="main-nav">Blog</a></li>
+                        <li><a href="#" class="main-nav">Support</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Designed by Rossi Bundeva - 2016</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+    </div>
+<script src="scripts/jquery-2.2.0.js"></script>
+    <script src="scripts/toastr.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-cookies.js"></script>
+
+
+    <script src="app/app.js"></script>
+    <script src="app/common/main-controller.js"></script>
+    <script src="app/common/notifier.js"></script>
+    <script src="app/identity/auth-service.js"></script>
+    <script src="app/identity/identity-service.js"></script>
+    <script src="app/identity/register-controller.js"></script>
+    <script src="app/identity/login-controller.js"></script>
+    <script src="app/common/data.js"></script>
+    <script src="app/home/index-partial-controller.js"></script>
+    <script src="app/home/home-controller.js"></script>
+    <script src="app/books/books-service.js"></script>
+    <script src="app/books/book-details-controller.js"></script>
+    <script src="app/books/books-controller.js"></script>
+    <script src="app/category/category-servise.js"></script>
+
+</body>
+</html>
