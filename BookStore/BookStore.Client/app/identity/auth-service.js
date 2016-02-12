@@ -11,9 +11,16 @@
 
             $http.post(baseUrl + 'api/account/register', user)
                 .then(function () {
-                    defered.resolve(true);
-                }, function (err) {
-                    defered.reject(err);
+                    defered.resolve();
+                }, function (response) {
+                    var error = response.data.ModelState;
+                    if (error && error[Object.keys(error)[0]][0]) {
+                        error = error[Object.keys(error)[0]][0];
+                    } else {
+                        error = response.data.message;
+                    }
+
+                    defered.reject(error);
                 });
 
             return defered.promise;

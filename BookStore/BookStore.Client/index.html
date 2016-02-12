@@ -11,13 +11,13 @@
 
 </head>
 <body ng-app="bookStoreApp" ng-cloak ng-controller="MainController as vm">
-<div class="main-main-header">
+<div class="main-header">
     <header class="container">
         <h1 id="main-header">
             <a href="/">My Book Store</a>
         </h1>
         <nav class="navbar navbar-default navbar-default-header">
-            <div class="container-fluid">
+            <div class="navbar-collapse collapse in" aria-expanded="true">
                 <ul class="nav navbar-nav">
                     <li><a href="/home" class="main-nav">Home</a></li>
                     <li><a href="/books" class="main-nav">Books</a></li>
@@ -37,16 +37,28 @@
                     <li><a href="/identity/profile" class="main-nav">{{vm.globalySetCurrentUser.Email}}</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" class="twitter"></a></li>
-                    <li><a href="#" class="rss"></a></li>
-                    <li><a href="#" class="facebook"></a></li>
+                    <li>
+                        <a href="#">
+                            <img alt="Twitter" src="img/twitter.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img alt="Rss" src="img/rss.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img alt="Facebook" src="img/facebook.png">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 </div>
 
-<div class="container" ng-view></div>
+<div ng-view></div>
 
     <div class="main-footer">
         <footer class="container">
@@ -111,6 +123,7 @@
     <script src="app/books/books-service.js"></script>
     <script src="app/books/book-details-controller.js"></script>
     <script src="app/books/books-controller.js"></script>
+    <script src="app/books/add-book-controller.js"></script>
     <script src="app/category/category-servise.js"></script>
 
 </body>

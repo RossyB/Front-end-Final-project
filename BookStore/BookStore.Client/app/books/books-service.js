@@ -11,9 +11,14 @@
             return data.get('api/books/' + id);
         }
 
+        function addBook(newBook) {
+            return data.post('api/books', newBook);
+        }
+
         return {
             getBooks: getBooks,
-            getBooksById: getBooksById
+            getBooksById: getBooksById,
+            addBook: addBook
         }
     }
 

@@ -19,6 +19,11 @@
                 controller: 'HomeController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
+            .when('/books/add', {
+                templateUrl: PARTIALS_PREFIX + 'books/add-book.html',
+                controller: 'AddBookController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
             .when('/books/:id', {
                 templateUrl: PARTIALS_PREFIX + 'books/book-details.html',
                 controller: 'BookDetailsController',
@@ -27,11 +32,6 @@
             .when('/books', {
                 templateUrl: PARTIALS_PREFIX + 'books/list-books.html',
                 controller: 'BooksController',
-                controllerAs: CONTROLLER_AS_VIEW_MODEL
-            })
-            .when('/books/addbooks', {
-                templateUrl: PARTIALS_PREFIX + 'books/add-book.html',
-                controller: 'AddBookController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
             .when('/identity/register', {
@@ -54,7 +54,7 @@
 
         if (auth.isAuthenticated()) {
             $http.defaults.headers.common.Authorization = 'Bearer ' + $cookies.get('authentication');
-            auth.getIdentity().then(function (identity) { 
+            auth.getIdentity().then(function(identity) {
                 notifier.success('Welcome back!');
             });
         }

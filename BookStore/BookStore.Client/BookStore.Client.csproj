@@ -88,6 +88,19 @@
     <Content Include="app\books\books-service.js" />
     <Content Include="app\category\category-servise.js" />
     <Content Include="app\common\data.js" />
+    <Content Include="img\content-bg.png" />
+    <Content Include="img\facebook.png" />
+    <Content Include="img\featured-left-arrow.png" />
+    <Content Include="img\featured-right-arrow.png" />
+    <Content Include="img\featured-zoom.png" />
+    <Content Include="img\icon-1.png" />
+    <Content Include="img\icon-2.png" />
+    <Content Include="img\icon-3.png" />
+    <Content Include="img\more-icon.png" />
+    <Content Include="img\quote-icon.png" />
+    <Content Include="img\rss.png" />
+    <Content Include="img\twitter.png" />
+    <Content Include="img\zoom-icon.png" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

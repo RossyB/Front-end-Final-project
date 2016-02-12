@@ -1,10 +1,10 @@
-﻿<div class="container-width">
+﻿<div class="container">
     <div class="row">
         <div class="col-md-10">
             <h1 class="colaborate-font">All Books</h1>
         </div>
         <div class="col-md-2 pull-right">
-            <a href="/books/addbook" class="btn btn-lg btn-custom">Add new book</a>
+            <a href="/books/add" ng-show="vm.identity.isAuthenticated()" class="btn btn-lg btn-custom">Add new book</a>
         </div>
     </div>
     

@@ -1,3 +1,31 @@
-﻿<div class="container">
-    <h1>Add book</h1>
+﻿<div class="container contauner-form">
+    <div class="well">
+        <form name="addBookForm" class="form-horizontal">
+            <fieldset>
+                <legend>Add New Book</legend>
+                <div class="form-group">
+                    <label for="title" class="col-md-2 control-label">Title</label>
+                    <div class="col-md-10">
+                        <input id="title" type="text" placeholder="Title" ng-model="user.email" required="required" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="category" class="col-lg-2 control-label">Category</label>
+                    <div class="col-lg-10">
+                        <select class="form-control" id="category">
+                            <option ng-repeat="category in vm.categories" value="{{category.Id}}">
+                                {{category.Name}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="pull-right">
+                    <button ng-click="addBook(newBook)" ng-disabled="addBookForm.$invalid" class="btn btn-custom">
+                        Add Book
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </div>
