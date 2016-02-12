@@ -1,26 +1,55 @@
 ﻿<div class="container book-details">
     <div class="row">
-        <div class="col-md-4">
-            <img src="{{vm.book.BookImageUrl}}" alt="{{vm.book.Title}}" class="img-responsive"/>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{{vm.book.BookImageUrl}}" alt="{{vm.book.Title}}" class="img-responsive"/>
+                </div>
+                <div class="col-md-7">
+                    <h1 class="colaborate-font">{{vm.book.Title}}</h1>
+                    <div>
+                        <strong>Author: </strong>{{vm.book.Author}}
+                    </div>
+                    <div>
+                        <strong>Category: </strong>{{vm.book.Category}}
+                    </div>
+                    <div>
+                        <strong>Added: </strong>{{vm.book.AddedOn}}
+                    </div>
+                    <div>
+                        <strong>Owner: </strong>{{vm.book.Owner}}
+                    </div>
+                    <div>
+                        <strong>Description: </strong>
+                    </div>
+                    <p>{{vm.book.Description}}</p>
+                    <div>
+                        <strong>Price: </strong>{{vm.book.Price}}
+                    </div>
+                </div>
+            </div>
+            <div class="pull-right">
+                <a href="/" class="btn btn-sm btn-custom">Go Back</a>
+            </div>
         </div>
-        <div class="col-md-7">
-            <h1 class="colaborate-font">{{vm.book.Title}}</h1>
-            <div><strong>Author: </strong>{{vm.book.Author}}
+        <div class="col-md-4 pull-right">
+            <div class="right-widget">
+                <h2 class="colaborate-font">Recent Post</h2>
+                <div>
+                    <p>Rhoncus quis, varius sed velit. Mauris quis nunc eu nunc molestie egestas et sit amet odio. Morbi lacinia velit in nibh sodales sed pharetra sem feugiat. Vivamus ut cursus augue. Integer sit amet arcu lorem, at egestas tellus. Phasellus tellus orci, congue at tristique </p>
+                </div>
             </div>
-            <div><strong>Category: </strong>{{vm.book.Category}}
-            </div>
-            <div><strong>Added: </strong>{{vm.book.AddedOn}}
-            </div>
-            <div><strong>Owner: </strong>{{vm.book.Owner}}
-            </div>
-            <div><strong>Description: </strong>
-            </div>
-            <p>{{vm.book.Description}}</p>
-            <div><strong>Price: </strong>{{vm.book.Price}}
+            <div class="right-widget">
+                <h2 class="colaborate-font">Recent Posts</h2>
+                <div>
+                    <p>Rhoncus quis, varius sed velit</p>
+                    <p>Mauris quis nunc eu nunc molestie egestas et sit amet odio</p>
+                    <p>Morbi lacinia velit in nibh sodales sed pharetra sem feugiat</p>
+                    <p>Vivamus ut cursus augue</p>
+                    <p>Integer sit amet arcu lorem, at egestas tellus</p>
+                    <p>Phasellus tellus orci, congue at tristique</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="pull-right">
-        <a href="/" class="btn btn-sm btn-custom">Go Back</a>
     </div>
 </div>

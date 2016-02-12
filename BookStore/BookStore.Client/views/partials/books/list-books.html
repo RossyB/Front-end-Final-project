@@ -1,24 +1,29 @@
-﻿<div class="container">
+﻿<div class="page-title">
+    <div class="container">
+        <h1 class="colaborate-font">All Books</h1>
+    </div>
+</div>
+<div class="container">
     <div class="row">
-        <div class="col-md-10">
-            <h1 class="colaborate-font">All Books</h1>
+        <div class="col-md-9">
         </div>
-        <div class="col-md-2 pull-right">
+        <div class="col-md-3 pull-right">
             <a href="/books/add" ng-show="vm.identity.isAuthenticated()" class="btn btn-lg btn-custom">Add new book</a>
         </div>
     </div>
-    
+
     <div class="row">
-        <div class="book-container">
-            <div class="row" ng-repeat="book in vm.Books">
+        <div class="col-md-8">
+            <div ng-repeat="book in vm.Books">
                 <h1 class="colaborate-font">{{book.Title}}</h1>
-                <hr/>
+                <hr />
                 <div>
-                    <p class="colaborate-font">by <i>{{book.Author}}</i>, Category: {{book.Category}}, Added: {{book.AddedOn}}, Owner: {{book.Owner}}
+                    <p class="colaborate-font">
+                        by <i>{{book.Author}}</i>, Category: {{book.Category}}, Added: {{book.AddedOn}}, Owner: {{book.Owner}}
                     </p>
                 </div>
                 <div class="col-md-3">
-                    <img src="{{book.BookImageUrl}}" alt="{{book.Title}}" class="img-thumbnail"/>
+                    <img src="{{book.BookImageUrl}}" alt="{{book.Title}}" class="img-thumbnail" />
                 </div>
                 <div class="col-md-9">
                     <p>{{book.Description}}</p>
@@ -28,6 +33,24 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-4 pull-right">
+            <div class="right-widget">
+                <h2 class="colaborate-font">Recent Post</h2>
+                <div>
+                    <p>Rhoncus quis, varius sed velit. Mauris quis nunc eu nunc molestie egestas et sit amet odio. Morbi lacinia velit in nibh sodales sed pharetra sem feugiat. Vivamus ut cursus augue. Integer sit amet arcu lorem, at egestas tellus. Phasellus tellus orci, congue at tristique </p>
+                </div>
+            </div>
+            <div class="right-widget">
+                <h2 class="colaborate-font">Recent Posts</h2>
+                <div>
+                    <p>Rhoncus quis, varius sed velit</p>
+                    <p>Mauris quis nunc eu nunc molestie egestas et sit amet odio</p>
+                    <p>Morbi lacinia velit in nibh sodales sed pharetra sem feugiat</p>
+                    <p>Vivamus ut cursus augue</p>
+                    <p>Integer sit amet arcu lorem, at egestas tellus</p>
+                    <p>Phasellus tellus orci, congue at tristique</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-

@@ -88,6 +88,7 @@
     <Content Include="app\books\books-service.js" />
     <Content Include="app\category\category-servise.js" />
     <Content Include="app\common\data.js" />
+    <Content Include="app\identity\authorization.js" />
     <Content Include="img\content-bg.png" />
     <Content Include="img\facebook.png" />
     <Content Include="img\featured-left-arrow.png" />

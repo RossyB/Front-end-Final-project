@@ -9,6 +9,6 @@ D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Models\bin\De
 D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Models\bin\Debug\EntityFramework.SqlServer.xml
 D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Models\obj\Debug\BookStore.Models.csprojResolveAssemblyReference.cache
 D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Models\obj\Debug\BookStore.Models.dll
 D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Models\obj\Debug\BookStore.Models.pdb
-D:\New courses\SliceAndDice\Final project\BookStore\Data\BookStore.Models\obj\Debug\BookStore.Models.csprojResolveAssemblyReference.cache

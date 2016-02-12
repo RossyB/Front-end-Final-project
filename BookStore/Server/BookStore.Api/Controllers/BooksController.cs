@@ -56,18 +56,18 @@ namespace BookStore.Api.Controllers
 
             var currentUserId = User.Identity.GetUserId();
 
-            var newBook = this.books.AddBook(
+            var newBookId = this.books.AddBook(
                 model.Title,
                 model.Author,
                 model.Description,
                 model.Isbn,
-                model.Price.ToString(),
+                model.Price,
                 model.BookImageUrl,
                 model.CategoryId,
                 currentUserId
                 );
 
-            return this.Ok(newBook);
+            return this.Ok(newBookId);
         }
     }
 }

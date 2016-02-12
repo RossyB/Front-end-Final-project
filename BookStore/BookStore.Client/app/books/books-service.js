@@ -11,8 +11,8 @@
             return data.get('api/books/' + id);
         }
 
-        function addBook(newBook) {
-            return data.post('api/books', newBook);
+        function addBook(book) {
+            return data.post('api/books', book);
         }
 
         return {

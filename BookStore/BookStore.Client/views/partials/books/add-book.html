@@ -6,22 +6,51 @@
                 <div class="form-group">
                     <label for="title" class="col-md-2 control-label">Title</label>
                     <div class="col-md-10">
-                        <input id="title" type="text" placeholder="Title" ng-model="user.email" required="required" class="form-control" />
+                        <input id="title" type="text" placeholder="Title" ng-model="book.Title" required="required" class="form-control"/>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="category" class="col-lg-2 control-label">Category</label>
+                    <label for="author" class="col-md-2 control-label">Author</label>
+                    <div class="col-md-10">
+                        <input id="author" type="text" placeholder="Author" ng-model="book.Author" required="required" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="category" class="col-lg-2 control-label" >Category</label>
                     <div class="col-lg-10">
-                        <select class="form-control" id="category">
+                        <select class="form-control" id="category" ng-model="book.CategoryId">
                             <option ng-repeat="category in vm.categories" value="{{category.Id}}">
                                 {{category.Name}}
                             </option>
                         </select>
                     </div>
                 </div>
-
+                <div class="form-group">
+                    <label for="author" class="col-md-2 control-label">Description</label>
+                    <div class="col-md-10">
+                        <input id="description" type="text" placeholder="Description" ng-model="book.Description" required="required" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="isbn" class="col-md-2 control-label">ISBN</label>
+                    <div class="col-md-10">
+                        <input id="isbn" type="text" placeholder="Description" ng-model="book.Isbn" required="required" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="price" class="col-md-2 control-label">Price</label>
+                    <div class="col-md-10">
+                        <input id="price" type="text" placeholder="Price" ng-model="book.Price" required="required" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bookImageUrl" class="col-md-2 control-label">Book Image Url</label>
+                    <div class="col-md-10">
+                        <input id="bookImageUrl" type="text" placeholder="Book Image Url" ng-model="book.BookImageUrl" required="required" class="form-control" />
+                    </div>
+                </div>
                 <div class="pull-right">
-                    <button ng-click="addBook(newBook)" ng-disabled="addBookForm.$invalid" class="btn btn-custom">
+                    <button ng-click="vm.addBook(book)" ng-disabled="addBookForm.$invalid" class="btn btn-custom">
                         Add Book
                     </button>
                 </div>

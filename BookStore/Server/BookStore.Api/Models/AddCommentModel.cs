@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BookStore.Models;
 
-namespace BookStore.Models
+namespace BookStore.Api.Models
 {
-    public class Comment
+    public class AddCommentModel
     {
-        [Key]
         public int Id { get; set; }
 
         [Required]
@@ -19,13 +15,7 @@ namespace BookStore.Models
 
         public string UserId { get; set; }
 
-        [ForeignKey("UserId")]
-        public virtual User User { get; set; }
-
         public int BookId { get; set; }
-
-        [ForeignKey("BookId")]
-        public virtual Book Book { get; set; }
 
         public DateTime CreatedOn { get; set; }
     }

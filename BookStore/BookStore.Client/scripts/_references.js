@@ -10,6 +10,7 @@
 /// <reference path="../app/common/notifier.js" />
 /// <reference path="../app/home/home-controller.js" />
 /// <reference path="../app/home/index-partial-controller.js" />
+/// <reference path="../app/identity/authorization.js" />
 /// <reference path="../app/identity/auth-service.js" />
 /// <reference path="../app/identity/identity-service.js" />
 /// <reference path="../app/identity/login-controller.js" />

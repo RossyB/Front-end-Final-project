@@ -31,7 +31,7 @@
 
         }
 
-        public int AddBook(string title, string author, string description, string isbn, string price, string bookImageUrl, int categoryId, string userId)
+        public int AddBook(string title, string author, string description, string isbn, decimal price, string bookImageUrl, int categoryId, string userId)
         {
             var currentUser = this.users
                 .All()
@@ -48,7 +48,7 @@
                 Author = author,
                 Description = description,
                 Isbn = isbn,
-                Price = decimal.Parse(price),
+                Price = price,
                 BookImageUrl = bookImageUrl,
                 AddedOn = DateTime.UtcNow,
                 CategoryId = categoryId,

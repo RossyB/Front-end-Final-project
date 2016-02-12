@@ -9,6 +9,6 @@
 
         IQueryable<Book> GetById(int bookId);
 
-        int AddBook(string title, string author, string description, string isbn, string price, string bookImageUrl, int categoryId, string userId);
+        int AddBook(string title, string author, string description, string isbn, decimal price, string bookImageUrl, int categoryId, string userId);
     }
 }

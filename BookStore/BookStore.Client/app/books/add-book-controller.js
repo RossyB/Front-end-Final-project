@@ -1,7 +1,7 @@
 ﻿(function() {
     'use script';
 
-    function AddBookController($location, categories, books) {
+    function AddBookController($location, notifier, categories, books) {
         var vm = this;
 
         categories.getAll()
@@ -10,14 +10,16 @@
             });
 
         vm.addBook = function (newBook) {
-            books.createTrip(newBook)
+            debugger;
+            books.addBook(newBook)
                 .then(function (addedBookId) {
+                    notifier.success('Book added!');
                     $location.path('/books/' + addedBookId);
                 });
         }
     }
 
     angular.module('bookStoreApp.controllers')
-        .controller('AddBookController', ['$location', 'categories', 'books', AddBookController]);
+        .controller('AddBookController', ['$location','notifier', 'categories', 'books', AddBookController]);
 
 }());
