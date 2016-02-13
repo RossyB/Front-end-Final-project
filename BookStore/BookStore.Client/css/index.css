@@ -27,10 +27,10 @@
 }
 
 a { text-decoration: none; color: #ffffff; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: none; }
 .clear { clear: both; }
 .ui-tabs-hide { display: none; }
-br.clear { margin: 0px; padding: 0px; }
+br.clear { margin: 0; padding: 0; }
 
 h1, h2, h3, h4, h5, h6 { padding-bottom: 5px; color: #111; letter-spacing: -1px; line-height: 1em; font-weight: normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #111; }
@@ -142,7 +142,8 @@ blockquote p { padding-bottom: 0px; }
 }
 
 .container-form {
-    width: 80%;
+    margin-top: 50px;
+    width: 50%;
 }
 
 .colaborate-font {
@@ -151,9 +152,14 @@ blockquote p { padding-bottom: 0px; }
 }
 
 .book-container {
-    display: block;
-    padding: 0 10px;
+    padding: 0 20px;
 }
+
+.book-details-container {
+    margin-top: 40px;
+}
+
+
 
 .img-thumbnail {
     max-height: 170px;
@@ -180,17 +186,6 @@ hr {
 
 .btn-custom:hover {
     color: #8d96a0;
-    text-shadow: 0 2px 1px black;
-}
-
-.main-footer {
-    margin-top: 50px;
-     background: #11161c; /* Old browsers */
-    background: -moz-linear-gradient(left,  #11161c 0, #282f36 51%, #11161c 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #11161c 0,#282f36 51%,#11161c 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #11161c 0,#282f36 51%,#11161c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    color: #8b949d;
-    
 }
 
 .right-widget {
@@ -198,12 +193,11 @@ hr {
 }
 
 .right-widget div {
-    background-image: -webkit-linear-gradient(#ffffff, #ffffff 70%, #f7f7f7);
-    background-image: -o-linear-gradient(#ffffff, #ffffff 70%, #f7f7f7);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(70%, #ffffff), to(#f7f7f7));
-    background-image: linear-gradient(#ffffff, #ffffff 70%, #f7f7f7);
+    background-image: -webkit-linear-gradient(#ffffff,  #f7f7f7);
+    background-image: -o-linear-gradient(#ffffff, , #f7f7f7);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7f7f7));
+    background-image: linear-gradient(#ffffff, #f7f7f7);
 }
-
 
 .right-widget > div {
     border: 1px solid #c5c5c5;
@@ -215,6 +209,17 @@ hr {
     color: #5e5e5e;
 }
 
+/* footer styles */
+
+.main-footer {
+    margin-top: 50px;
+    background: #11161c; /* Old browsers */
+    background: -moz-linear-gradient(left,  #11161c 0, #282f36 51%, #11161c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #11161c 0,#282f36 51%,#11161c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #11161c 0,#282f36 51%,#11161c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: #8b949d;
+    
+}
 .left-footer-widget {
     padding-right: 60px;
 }
@@ -226,6 +231,8 @@ hr {
 .right-footer-widget {
     padding-left: 60px;
 }
+
+/* book styles */
 
 h3 a {
     color: #ffffff;
@@ -241,12 +248,11 @@ h3 a:hover {
 }
 
 .book-description {
-    
+    display: block;
     height: 170px;
     overflow: hidden;     
     padding: 5px;
 }
-
 
 
 /* rotator styles */
@@ -331,4 +337,140 @@ html .rotator-wrapper .carousel-control {
 
 .rotator.rotate-right {
     left: -231%;
+}
+
+.zoom-icon {
+    background: url('../img/featured-zoom.png') no-repeat;
+    position: absolute;
+    display: none;
+    width: 50px;
+    height: 50px;
+    left: 44%;
+    top: 38%
+}
+
+/* home page styles */
+
+.home-container {
+    margin-top: 20px;
+}
+
+.home-icon-img {
+    display: block;
+    margin-top: 20px;
+}
+
+.home-article-text {
+    margin-left: 55px;
+    height: 200px;
+    overflow: hidden;
+}
+
+
+
+.btn-read-more-home {
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 70%, #f7f7f7);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 70%, #f7f7f7);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(70%, #ffffff), to(#f7f7f7));
+    background-image: linear-gradient(#ffffff, #ffffff 70%, #f7f7f7);
+    border-radius: 10px;
+    color: #11161c;
+    margin-top: 15px;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+}
+.btn-read-more-home:focus {
+    text-decoration: none;
+}
+
+.home-middle-title-container {
+    background-image: -webkit-linear-gradient(#ffffff, #f7f7f7);
+    background-image: -o-linear-gradient(#ffffff,, #f7f7f7);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7f7f7));
+    background-image: linear-gradient(#ffffff, #f7f7f7);
+    padding: 50px;
+    margin: 50px 0;
+}
+.home-middle-title {
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.quote-icon-container {
+    position: relative;
+}
+
+#quote-icon {
+    display: block;
+    position: absolute;
+    left: 49%;
+    top: 35px;
+    background: url('../img/quote-icon.png') no-repeat;
+    width: 28px;
+    height: 28px;
+}
+.aditional-info-button-container {
+    position: relative;
+}
+
+#aditional-info-button {
+    display: block;
+    padding-left: 23px;
+    padding-right: 12px;
+    height: 38px;
+    padding-top: 12px;
+    position: absolute;
+    left: 43%;
+    top: -100px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+.project {
+    margin: 15px 0;
+    position: relative;
+}
+
+.project-more-icon, .project-zoom-icon {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.project-more-icon {
+    background: url('../img/more-icon.png') no-repeat;
+    left: 36%;
+    top: 32%;
+}
+
+.project-zoom-icon {
+    background: url('../img/zoom-icon.png') no-repeat;
+    left: 53%;
+    top: 32%;
+}
+
+.project:hover .project-zoom-icon {
+    opacity: 1;
+}
+.project:hover .project-more-icon {
+    opacity: 1;
+}
+
+.project:hover {
+    opacity: 0.7;
+}
+
+.comment-container {
+    background-image: -webkit-linear-gradient(#ffffff,  #f7f7f7);
+    background-image: -o-linear-gradient(#ffffff, , #f7f7f7);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7f7f7));
+    background-image: linear-gradient(#ffffff, #f7f7f7);
+    border: 1px solid #c5c5c5;
+    border-radius: 10px;
+}
+.comments-container {
+    margin-top: 20px;
+    margin-left: -30px;
 }

@@ -89,7 +89,15 @@
     <Content Include="app\category\category-servise.js" />
     <Content Include="app\common\data.js" />
     <Content Include="app\identity\authorization.js" />
+    <Content Include="img\Ivan.jpeg" />
+    <Content Include="img\Bookstore3.jpg" />
+    <Content Include="img\Bookstore4.jpg" />
+    <Content Include="img\Bookstore5.jpg" />
+    <Content Include="img\Bookstore6.jpg" />
+    <Content Include="img\Bookstore7.jpg" />
+    <Content Include="img\Bookstore8.jpg" />
     <Content Include="img\content-bg.png" />
+    <Content Include="img\Peter.jpeg" />
     <Content Include="img\facebook.png" />
     <Content Include="img\featured-left-arrow.png" />
     <Content Include="img\featured-right-arrow.png" />
@@ -185,7 +193,9 @@
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\angular-route.js" />
     <Content Include="scripts\angular-route.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="scripts\angular.min.js.map" />
     <Content Include="scripts\angular-route.min.js.map" />
   </ItemGroup>

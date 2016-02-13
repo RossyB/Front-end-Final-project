@@ -29,10 +29,13 @@
 
                     <div style="height: 1px;" aria-expanded="false" class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            
                             <li><a href="/home" class="main-nav">Home</a></li>
                             <li><a href="/books" class="main-nav">Books</a></li>
-                            <li><a href="#" class="main-nav">Features</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav" ng-if="vm.globalySetCurrentUser">
+                            <li><a href="/books/add" class="main-nav">Add Book</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav">
                             <li><a href="#" class="main-nav">About</a></li>
                             <li><a href="#" class="main-nav">Blog</a></li>
                             <li><a href="#" class="main-nav">Support</a></li>
@@ -72,20 +75,20 @@
 
     <div class="main-footer">
         <footer class="container">
-            <div class="row">
-                <div class="col-md-4 left-footer-widget">
+            <div class="row ">
+                <div class="col-sm-6 col-md-4">
                     <h3 class="colaborate-font">
                         <a href="#">Who We Are</a>
                     </h3>
                     <p>Rhoncus quis, varius sed velit. Mauris quis nunc eu nunc molestie egestas et sit amet odio. Morbi lacinia velit in nibh sodales sed pharetra sem feugiat. Vivamus ut cursus augue. Integer sit amet arcu lorem, at egestas tellus. Phasellus tellus orci, congue at tristique at, mattis ut arcu. Donec dictum </p>
                 </div>
-                <div class="col-md-4  center-footer-widget">
+                <div class="col-sm-6 col-md-4">
                     <h3 class="colaborate-font">
                         <a href="#">Custom Text Widget</a>
                     </h3>
                     <p>Rhoncus quis, varius sed velit. Mauris quis nunc eu nunc molestie egestas et sit amet odio. Morbi lacinia velit in nibh sodales sed pharetra sem feugiat. Vivamus ut cursus augue. Integer sit amet arcu lorem, at egestas tellus. Phasellus tellus orci, congue at tristique at, mattis ut arcu. Donec dictum </p>
                 </div>
-                <div class="col-md-4 right-footer-widget">
+                <div class="col-sm-6 col-md-4">
                     <h3 class="colaborate-font">
                         <a href="#">Recent Posts</a>
                     </h3>

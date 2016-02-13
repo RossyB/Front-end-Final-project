@@ -1,12 +1,16 @@
-﻿<div class="container book-details">
-    <div class="row">
+﻿<div class="page-title">
+    <div class="container">
+        <h1 class="colaborate-font">{{vm.book.Title}}</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row book-details-container">
         <div class="col-md-8">
             <div class="row">
                 <div class="col-md-4">
                     <img src="{{vm.book.BookImageUrl}}" alt="{{vm.book.Title}}" class="img-responsive"/>
                 </div>
                 <div class="col-md-7">
-                    <h1 class="colaborate-font">{{vm.book.Title}}</h1>
                     <div>
                         <strong>Author: </strong>{{vm.book.Author}}
                     </div>
@@ -30,6 +34,27 @@
             </div>
             <div class="pull-right">
                 <a href="/" class="btn btn-sm btn-custom">Go Back</a>
+            </div>
+
+            <div class="row comments-container">
+                <h2 class="colaborate-font">30 Comments</h2>
+                <hr/>
+                <div class="col-md-2">
+                    <img class="img-thumbnail" src="../../../img/Ivan.jpeg"/>
+                </div>
+                <div class="col-md-9 comment-container">
+                    <h3>Ivan says:</h3>
+                    <p>Rhoncus quis, varius sed velit. Mauris quis nunc eu nunc molestie egestas et sit amet odio. Morbi lacinia velit in nibh sodales sed pharetra sem feugiat. Vivamus ut cursus augue. Integer sit amet arcu lorem, at egestas tellus. Phasellus tellus orci, congue at tristique at, mattis ut arcu. Donec dictum eros eu felis laoreet egestas. Nullam adipiscing nibh id felis lacinia a iaculis nisi vestibulum.</p>
+                </div>
+            </div>
+            <div class="row comments-container">
+                <div class="col-md-2">
+                    <img class="img-thumbnail " src="../../../img/Peter.jpeg" />
+                </div>
+                <div class="col-md-9 comment-container">
+                    <h3>Peter says:</h3>
+                    <p>Rhoncus quis, varius sed velit. Mauris quis nunc eu nunc molestie egestas et sit amet odio. Morbi lacinia velit in nibh sodales sed pharetra sem feugiat. Vivamus ut cursus augue. Integer sit amet arcu lorem, at egestas tellus. Phasellus tellus orci, congue at tristique at, mattis ut arcu. Donec dictum eros eu felis laoreet egestas. Nullam adipiscing nibh id felis lacinia a iaculis nisi vestibulum.</p>
+                </div>
             </div>
         </div>
         <div class="col-md-4 pull-right">
